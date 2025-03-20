@@ -1,0 +1,35 @@
+//Partial - use differnet files and import using @import filename(like @import "mixin" ,,, @import var)
+//parameters
+// ROOT
+$bg-color:blue; 
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+    
+//   }
+
+@mixin flexbox_props{      //mixin
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+  .main_header {
+    width: 100vw;
+    height: 100vh;
+  @include flexbox_props;           //mixin
+  }
+  h1 {
+    color: $bg-color;  //rrot
+    &:hover{                      //nesting
+      color: black;
+    }
+  }  
+  p{
+    font-size: 3rem+1rem;    //operators
+    color: $bg-color;
+    text-align: center;
+  }

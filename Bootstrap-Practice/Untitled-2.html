@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0b132a;
+            --secondary-color: #4f5665;
+            --button-color: #f53838;
+            --text-color: #000000;
+            --background-color: #ffffff;
+            --primary-font: "Rubik", sans-serif;
+        }
+        
+        body {
+            font-family: var(--primary-font);
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            height: 36px;
+        }
+
+        .navbar-nav {
+            margin: auto; 
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item .nav-link {
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-item .nav-link:hover {
+            color: var(--button-color);
+        }
+
+        .sign-in-up {
+            display: flex;
+            gap: 10px;
+        }
+
+        .signin {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+
+        .signup {
+            color: var(--button-color);
+            border: 1px solid var(--button-color);
+            border-radius: 50px;
+            padding: 8px 15px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sign-in-up {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-main">
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                </ul>
+                <div class="sign-in-up ms-lg-auto">
+                    <a href="#" class="signin">Sign In</a>
+                    <a href="#" class="signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
