@@ -1,25 +1,26 @@
 
-// function UTC_CurrentTime(city,utc_offset){
-//     var b = new Date();                                  //current time
-//     var utc = b.getTime()+(b.getTimezoneOffset()*60000);             //time in milisecond and also
-//     var nd = new Date(utc+(3600000*utc_offset));
-//     return "The Local Time of city " + city +" is "+nd.toLocaleString();
-// }
-// console.log(UTC_CurrentTime('argentina','-3'));
+function UTC_CurrentTime(city,utc_offset){
+    var b = new Date();                                  //current time
+    var utc = b.getTime()+(b.getTimezoneOffset()*60000);   //gettime return time in milisecond  // getTimezoneOffset 60000 miliseconds in 1 minute
+    // console.log(utc);           //Get real utc time
+    var nd = new Date(utc+(3600000*utc_offset));                      // 36,000,00 miliseconds in 1 hour //utc_offset
+    return "The Local Time of city " + city +" is "+nd.toLocaleString();       //toLocalString for readablty
+}
+console.log(UTC_CurrentTime('argentina','-3'));
 
 // var e = new Date();
 // var month = e.getMonth() + 1;  
 // console.log("Month:", month);
 
 
-let monthNames = ["January", "February", "March", "April", "May", "June", 
-    "July", "August", "September", "October", "November", "December"];
+// let monthNames = ["January", "February", "March", "April", "May", "June", 
+//     "July", "August", "September", "October", "November", "December"];
 
-let month = new Date().getMonth() + 1;  // Month Number 
-console.log("Month Number:", month);  // 3
+// let month = new Date().getMonth() + 1;  // Month Number 
+// console.log("Month Number:", month);  // 3
 
-let monthName = monthNames[month - 1];  // Index
-console.log("Correct Month Name:", monthName);  
+// let monthName = monthNames[month - 1];  // Index
+// console.log("Correct Month Name:", monthName);  
 
 
 //Practice
