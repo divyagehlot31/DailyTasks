@@ -1,26 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const menuToggle = document.querySelector(".menu-toggle");
-//   const navLinks = document.querySelector(".nav-links");
-
-//   menuToggle.addEventListener("click", function () {
-//       navLinks.classList.toggle("active");
-//   });
-// });
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var menuToggle = document.getElementById("menu-toggle");
-//   var navlinks = document.querySelector(".nav-links");
-
-//   if (menuToggle && navlinks) { 
-//       menuToggle.addEventListener("click", function () {
-//           navlinks.classList.toggle("show");
-//       });
-//   } else {
-//       console.error("ERROR!");
-//   }
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     var menuToggle = document.getElementById("menu-toggle");
     var navlinks = document.querySelector(".nav-links");
@@ -42,3 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    setTimeout(function() {
+        // Hide skeleton
+        document.getElementById('skeleton-loader').style.display = 'none';
+        // Show real content
+        document.getElementById('actual-content').classList.remove('content-invisible');
+    }, 5000);
+});

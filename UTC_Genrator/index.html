@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTC Time Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>UTC Time Converter</h2>
+        <input type="text" id="city" placeholder="Enter City">
+        <input type="number" id="utcOffset" placeholder="Enter UTC Offset (e.g., 5.5)">
+        <select id="format">
+            <option value="DD-MM-YYYY">DD-MM-YYYY</option>
+            <option value="MM-DD-YYYY">MM-DD-YYYY</option>
+            <option value="DD Month YYYY">DD Month YYYY</option>
+        </select>
+        <button onclick="convertTime()">Get Local Time</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function convertTime() {
+            let city = document.getElementById("city").value;
+            let utc_offset = parseFloat(document.getElementById("utcOffset").value);
+            let format = document.getElementById("format").value;
+
+            let b = new Date();
+            let utc = b.getTime() + (b.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000 * utc_offset));
+
+            let day = nd.getDate();
+            let month = nd.getMonth() + 1;
+            let year = nd.getFullYear();
+            let monthNames = ["January", "February", "March", "April", "May", "June", 
+                              "July", "August", "September", "October", "November", "December"];
+
+            let formattedDate;
+            if (format === "DD-MM-YYYY") {
+                formattedDate = `${day}-${month}-${year}`;
+            } else if (format === "MM-DD-YYYY") {
+                formattedDate = `${month}-${day}-${year}`;
+            } else if (format === "DD Month YYYY") {
+                formattedDate = `${day} ${monthNames[month - 1]} ${year}`;
+            } else {
+                formattedDate = nd.toLocaleDateString();
+            }
+
+            document.getElementById("result").innerText = `The Local Time of ${city} is ${formattedDate}, ${nd.toLocaleTimeString()}`;
+        }
+    </script>
+</body>
+</html>
