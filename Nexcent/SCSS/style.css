@@ -1,0 +1,39 @@
+@media (max-width: 428px) {
+  .navbar {
+    flex-wrap: wrap !important;
+  }
+  .navbar .auth-buttons {
+    justify-content: center !important;
+    margin-top: 15px !important;
+    order: 3 !important;
+  }
+  .navbar .navbar-toggler {
+    order: 2 !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  .navbar .navbar-brand {
+    order: 1 !important;
+  }
+}
+@media (max-width: 203px) {
+  .navbar {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .navbar .navbar-toggler {
+    margin: 10px 0 !important;
+    text-align: center !important;
+  }
+  .navbar .auth-buttons {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 5px !important;
+  }
+  .navbar .auth-buttons .btn {
+    white-space: nowrap !important;
+    font-size: 10px !important;
+    padding: 5px 8px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
