@@ -3,6 +3,7 @@
 @media (max-width: $breakpoint-mobile) {
     .navbar {
         flex-wrap: wrap !important;
+        // max-width: 1440px;
 
         .auth-buttons {
             justify-content: center !important;

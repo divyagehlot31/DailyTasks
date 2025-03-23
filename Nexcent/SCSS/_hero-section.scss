@@ -1,7 +1,7 @@
 // Hero Slider Styles
 .hero-slider {
     background-color: $light-bg;
-    padding: 96px 0;
+    padding: 85px 0;
     
     @media (min-width: 992px) {
         .container-xxl {
@@ -73,14 +73,12 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
-            padding: 14px 32px;
             border-radius: 4px;
         }
     }
     
     .hero-image {
         max-width: 391px;
-        max-height: 407px;
         width: 100%; // Makes image responsive
         height: auto;
     }

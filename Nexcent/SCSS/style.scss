@@ -1,6 +1,19 @@
 // Import Variables
 @import 'variables';
 
+// Global container styles
+.container-xxl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+  @media (min-width: 992px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 // Import Navbar Styles
 @import 'navbar';
 

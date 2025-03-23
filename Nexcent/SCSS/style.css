@@ -1,3 +1,16 @@
+.container-xxl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 992px) {
+  .container-xxl {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 428px) {
   .navbar {
     flex-wrap: wrap !important;
@@ -39,7 +52,7 @@
 }
 .hero-slider {
   background-color: #F5F7FA;
-  padding: 96px 0;
+  padding: 85px 0;
 }
 @media (min-width: 992px) {
   .hero-slider .container-xxl {
@@ -104,12 +117,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding: 14px 32px;
   border-radius: 4px;
 }
 .hero-slider .hero-image {
   max-width: 391px;
-  max-height: 407px;
   width: 100%;
   height: auto;
 }
