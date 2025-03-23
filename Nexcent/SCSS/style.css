@@ -36,4 +36,108 @@
     font-size: 10px !important;
     padding: 5px 8px !important;
   }
+}
+.hero-slider {
+  background-color: #F5F7FA;
+  padding: 96px 0;
+}
+@media (min-width: 992px) {
+  .hero-slider .container-xxl {
+    padding-left: 144px;
+    padding-right: 144px;
+    max-width: 1440px;
+  }
+}
+.hero-slider .slider-content {
+  max-width: 657px;
+}
+.hero-slider .slider-title h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 76px;
+  color: #4D4D4D;
+  margin: 0;
+}
+.hero-slider .slider-title h1.title-line {
+  white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100%;
+}
+.hero-slider .slider-title h1.text-primary {
+  color: #4CAF4F !important;
+}
+@media (max-width: 1400px) {
+  .hero-slider .slider-title h1 {
+    font-size: 56px;
+    line-height: 66px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-slider .slider-title h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .hero-slider .slider-title h1.title-line {
+    white-space: normal;
+  }
+}
+@media (max-width: 767px) {
+  .hero-slider .slider-title h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+.hero-slider .slider-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #717171;
+  max-width: 657px;
+}
+.hero-slider .slider-cta .btn-primary {
+  background-color: #4CAF4F;
+  border-color: #4CAF4F;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 32px;
+  border-radius: 4px;
+}
+.hero-slider .hero-image {
+  max-width: 391px;
+  max-height: 407px;
+  width: 100%;
+  height: auto;
+}
+.hero-slider .carousel-indicators {
+  position: relative;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 8px;
+  bottom: auto;
+  margin-bottom: 0;
+}
+.hero-slider .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4CAF4F;
+  opacity: 0.3;
+  margin: 0 4px;
+  border: none;
+}
+.hero-slider .carousel-indicators button.active {
+  opacity: 1;
+}
+.hero-slider .carousel-item {
+  min-height: 450px;
+}
+@media (max-width: 991px) {
+  .hero-slider .carousel-item {
+    min-height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

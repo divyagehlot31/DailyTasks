@@ -1,0 +1,48 @@
+@import 'variables';
+
+@media (max-width: $breakpoint-mobile) {
+    .navbar {
+        flex-wrap: wrap !important;
+
+        .auth-buttons {
+            justify-content: center !important;
+            margin-top: 15px !important;
+            order: 3 !important;
+        }
+
+        .navbar-toggler {
+            order: 2 !important;
+            margin-left: auto !important;
+            margin-right: 0 !important;
+        }
+
+        .navbar-brand {
+            order: 1 !important;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-extra-small) {
+    .navbar {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .navbar-toggler {
+            margin: 10px 0 !important;
+            text-align: center !important;
+        }
+
+        .auth-buttons {
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            justify-content: center !important;
+            gap: 5px !important;
+
+            .btn {
+                white-space: nowrap !important;
+                font-size: 10px !important;
+                padding: 5px 8px !important;
+            }
+        }
+    }
+}

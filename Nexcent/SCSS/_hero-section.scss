@@ -1,0 +1,119 @@
+// Hero Slider Styles
+.hero-slider {
+    background-color: $light-bg;
+    padding: 96px 0;
+    
+    @media (min-width: 992px) {
+        .container-xxl {
+            padding-left: 144px;
+            padding-right: 144px;
+            max-width: 1440px; // Increase container width to match design
+        }
+    }
+    
+    .slider-content {
+        max-width: 657px;
+    }
+    
+    .slider-title {
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 76px;
+            color: $dark-grey;
+            margin: 0; // Remove default margins for tight stacking
+            
+            &.title-line {
+                // Prevent wrapping of the first line
+                white-space: nowrap;
+                width: fit-content;
+                min-width: 100%;
+            }
+            
+            &.text-primary {
+                color: $brand-primary !important;
+            }
+            
+            @media (max-width: 1400px) {
+                font-size: 56px;
+                line-height: 66px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 48px;
+                line-height: 58px;
+                
+                &.title-line {
+                    white-space: normal; // Allow wrapping on smaller screens
+                }
+            }
+            
+            @media (max-width: 767px) {
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
+    
+    .slider-description {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $medium-grey;
+        max-width: 657px;
+    }
+    
+    .slider-cta {
+        .btn-primary {
+            background-color: $brand-primary;
+            border-color: $brand-primary;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 14px 32px;
+            border-radius: 4px;
+        }
+    }
+    
+    .hero-image {
+        max-width: 391px;
+        max-height: 407px;
+        width: 100%; // Makes image responsive
+        height: auto;
+    }
+    
+    .carousel-indicators {
+        position: relative;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 8px;
+        bottom: auto;
+        margin-bottom: 0;
+        
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $brand-primary;
+            opacity: 0.3;
+            margin: 0 4px;
+            border: none;
+            
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    
+    // Make carousel height consistent
+    .carousel-item {
+        min-height: 450px;
+        
+        @media (max-width: 991px) {
+            min-height: auto;
+        }
+    }
+}
