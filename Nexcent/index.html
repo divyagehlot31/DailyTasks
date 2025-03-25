@@ -13,149 +13,114 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
- <!-- Navigation Bar -->
-<header class="bg-light pt-4">
-  <div class="container-xxl">
-    <nav class="navbar navbar-expand-lg">
-      <!-- Logo - Removed ms-lg-5 for better alignment -->
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.svg" alt="Logo" width="154.49" height="24">
-      </a>
+  <!-- NavBar -->
+  <header class="header-main">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <img class="navbar-brand me-auto" src="Images/Logo.svg"></a>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">FAQ</a>
+            </li>
 
-      <!-- Navigation Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Feature</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-        </ul>
+          </ul>
+
+        </div>
       </div>
+      <a href="#" class="login-btn ">Login</a>
+      <a href="#" class="signup-btn">Sign up</a>
 
-      <!-- Authentication Buttons -->
-      <div class="d-flex gap-3 ms-lg-0 me-lg-5 order-lg-last auth-buttons">
-        <a href="#" class="btn fw-medium fs-6 px-3 py-2">Login</a>
-        <a href="#" class="btn btn-primary fw-medium fs-6 px-3 py-2">Sign up</a>
-      </div>
-
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler order-lg-last" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero Slider Section -->
-<section class="hero-slider">
-  <div class="container-xxl">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <!-- First Slide -->
-        <div class="carousel-item active">
-          <div class="row align-items-center">
-            <!-- Text Content Column -->
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="slider-content">
-                <div class="slider-title mb-4">
-                  <h1 class="fw-semibold title-line">Lessons and insights</h1>
-                  <h1 class="fw-semibold text-primary">from 8 years</h1>
-                </div>
-                <p class="slider-description text-medium-grey mb-4">
-                  Where to grow your business as a photographer: site or social media?
-                </p>
-                <div class="slider-cta">
-                  <a href="#" class="btn btn-primary px-4 py-3">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="col-lg-6 text-center">
-              <img src="images/slider-image.svg" class="img-fluid hero-image" alt="Developer Illustration">
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Slide -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <!-- Text Content Column -->
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="slider-content">
-                <div class="slider-title mb-4">
-                  <h1 class="fw-semibold title-line">Lessons and insights</h1>
-                  <h1 class="fw-semibold text-primary">from 8 years</h1>
-                </div>
-                <p class="slider-description text-medium-grey mb-4">
-                  Where to grow your business as a photographer: site or social media?
-                </p>
-                <div class="slider-cta">
-                  <a href="#" class="btn btn-primary px-4 py-3">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="col-lg-6 text-center">
-              <img src="images/slider-image.svg" class="img-fluid hero-image" alt="Developer Illustration">
-            </div>
-          </div>
-        </div>
-
-        <!-- Third Slide -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <!-- Text Content Column -->
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="slider-content">
-                <div class="slider-title mb-4">
-                  <h1 class="fw-semibold title-line">Lessons and insights</h1>
-                  <h1 class="fw-semibold text-primary">from 8 years</h1>
-                </div>
-                <p class="slider-description text-medium-grey mb-4">
-                  Where to grow your business as a photographer: site or social media?
-                </p>
-                <div class="slider-cta">
-                  <a href="#" class="btn btn-primary px-4 py-3">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="col-lg-6 text-center">
-              <img src="images/slider-image.svg" class="img-fluid hero-image" alt="Developer Illustration">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Carousel Indicators - Moved inside carousel -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
     </div>
-  </div>
-</section>
+  </nav>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <!-- Text Content Column -->
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="slider-content">
+                  <div class="slider-title mb-4">
+                    <h1 class="fw-semibold title-line">Lessons and insights</h1>
+                    <h1 class="fw-semibold text-primary">from 8 years</h1>
+                  </div>
+                  <p class="slider-description text-medium-grey mb-4">
+                    Where to grow your business as a photographer: site or social media?
+                  </p>
+                  <div class="slider-cta">
+                    <a href="#" class="btn btn-primary px-4 py-3">Register</a>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Image Column -->
+              <div class="col-lg-6 text-center">
+                <img src="images/slider-image.svg" class="img-fluid hero-image" alt="Developer Illustration">
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Images/slider-image.svg"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/slider-image.svg"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </div>
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>
