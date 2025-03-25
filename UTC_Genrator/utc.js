@@ -32,3 +32,5 @@ console.log(UTC_CurrentTime('India', 5.5, "DD-MM-YYYY"));
 console.log(UTC_CurrentTime('USA', -5, "MM-DD-YYYY")); 
 console.log(UTC_CurrentTime('France', 1, "DD Month YYYY")); 
 // console.log(UTC_CurrentTime('France', 1, "DD YYYY")); 
+
+// 2025-03-24T13:00:43Z
