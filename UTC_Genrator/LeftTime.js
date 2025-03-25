@@ -26,5 +26,5 @@ function timeLeft(eventTime) {
 
 
 setTimeout(() => {
-    timeLeft("2025-03-25T04:59:43Z"); //UTC time
+    timeLeft("2025-03-25T05:59:43Z"); //UTC time
 }, 0);
