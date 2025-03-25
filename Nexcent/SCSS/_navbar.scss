@@ -1,97 +1,248 @@
-@import 'variables';
+:root {
+  --primary-color: #4CAF4F;
+  --neutral-silver: #F5F7FA;
+  --dark-background: #18191F;
+  --font-family: 'Inter', sans-serif;
+}
 
-.container {
-    // max-width: 1440px !important;
-    // margin: 0 auto !important;
-    // padding: 0px 12px !important;
-  }
-//   .header-main {
-//     padding: 50px 0;
-//   }
+.navbar {
+  background: var(--neutral-silver);
+  padding: 15px 0;
 
-  .navbar {
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
   }
 
-  .login-btn {
-    color:$primary-brand;
-    text-decoration: none;    
+  .logo {
+    max-width: 150px;
+    height: auto;
+    transition: max-width 0.3s ease;
+
+    @media (max-width: 768px) {
+      max-width: 120px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 100px;
+    }
+
+    @media (max-width: 193px) {
+      max-width: 80px;
+    }
+
+    @media (max-width: 96px) {
+      max-width: 30px;    }
   }
 
-  .signup-btn {
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    background-color:$primary-brand;
-    text-decoration: none;
+  .navbar-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 193px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 96px) {
+      display: none; /* Optionally hide navigation links */
+    }
+
+    .nav-item {
+      list-style: none;
+
+      .nav-link {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--dark-background);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &:first-child {
+          font-weight: 500;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 14px;
+        }
+
+        @media (max-width: 193px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 96px) {
+          font-size: 8px; /* Smallest font size */
+          padding: 2px 5px; /* Minimal padding */
+        }
+      }
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media (max-width: 193px) {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    @media (max-width: 96px) {
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .login-btn, .signup-btn {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-family: var(--font-family);
+      font-size: 14px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      background: var(--neutral-silver);
+      color: var(--primary-color);
+      border: none solid var(--primary-color);
+      
+
+      &:hover {
+        background: var(--primary-color);
+        color: #fff;
+      }
+    }
+
+    .signup-btn {
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background: darken(#4CAF4F, 10%);
+      }
+    }
+
+    @media (max-width: 193px) {
+      .login-btn, .signup-btn {
+        font-size: 10px;
+        padding: 5px 8px;
+      }
+    }
+
+    @media (max-width: 96px) {
+      .login-btn, .signup-btn {
+        font-size: 7px; /* Smallest font size */
+        padding: 3px 2px; /* Minimal padding */
+        border-radius: 3px; /* Smaller border radius */
+      }
+    }
+  }
+
+  .navbar-toggler {
+    display: none;
+    background: none;
     border: none;
-    color:$neutral-silver;
-  }
+    width: 24px; /* Fixed width for the toggler */
+    height: 20px; /* Fixed height for the toggler */
+    position: relative;
+    cursor: pointer;
   
-  .navbar-toggler{
-    border: none;
-
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px; /* Thickness of the lines */
+      background: var(--primary-color);
+      transition: all 0.3s ease;
+    }
+  
+    &::before {
+      top: 0;
+    }
+  
+    &::after {
+      bottom: 0;
+    }
+  
+    /* Middle line */
+    span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--primary-color);
+      transform: translateY(-50%);
+    }
+  
+    @media (max-width: 991px) {
+      display: block;
+  
+      &::before,
+      &::after,
+      span {
+        height: 1.5px; /* Thinner lines for smaller screens */
+      }
+  
+      width: 12px; /* Smaller width */
+      height: 14px; /* Smaller height */
+    }
+  
+    @media (max-width: 768px) {
+      width: 10px; /* Even smaller width */
+      height: 12px; /* Even smaller height */
+  
+      &::before,
+      &::after,
+      span {
+        height: 1px; /* Thinnest lines */
+      }
+    }
   }
 
+  .offcanvas {
+    width: 250px;
+    background: var(--neutral-silver);
 
+    .offcanvas-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
+      .btn-close {
+        color: var(--primary-color);
+      }
+    }
 
-
-
-
-// @media (max-width: $breakpoint-mobile) {
-//     .navbar {
-
-//         flex-wrap: wrap !important;
-
-//         .navbar-nav{
-//           gap: 0px;
-//         }
-//         // max-width: 1440px;
-
-//         .auth-buttons {
-//             justify-content: center !important;
-//             margin-top: 15px !important;
-//             order: 3 !important;
-
-//         }
-
-//         .navbar-toggler {
-//             order: 2 !important;
-//             // margin-left: auto !important;
-//             // margin-right: 0 !important;
-//         }
-
-//         .navbar-brand {
-//             order: 1 !important;
-//         }
-//     }
-// }
-
-// @media (max-width: $breakpoint-extra-small) {
-//     .navbar {
-//         flex-direction: column !important;
-//         align-items: center !important;
-
-        
-
-//         .auth-buttons {
-//             flex-direction: row !important;
-//             flex-wrap: nowrap !important;
-//             justify-content: center !important;
-//             gap: 5px !important;
-
-//             .btn {
-//                 white-space: nowrap !important;
-//                 font-size: 10px !important;
-//                 padding: 5px 8px !important;
-//             }
-//         }
-//     }
-// }
+    .offcanvas-body {
+      padding: 15px;
+    }
+  }
+}
