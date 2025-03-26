@@ -1,13 +1,9 @@
-:root {
-  --primary-color: #4CAF4F;
-  --neutral-silver: #F5F7FA;
-  --dark-background: #18191F;
-  --font-family: 'Inter', sans-serif;
-}
+@import "variables";
 
 .navbar {
-  background: var(--neutral-silver);
+  background: $neutral-silver;
   padding: 15px 0;
+  position: relative;
 
   .container {
     display: flex;
@@ -57,22 +53,22 @@
     }
 
     @media (max-width: 96px) {
-      display: none; /* Optionally hide navigation links */
+      display: none; 
     }
 
     .nav-item {
       list-style: none;
 
       .nav-link {
-        font-family: var(--font-family);
+        font-family: $body-font;
         font-weight: 400;
         font-size: 16px;
-        color: var(--dark-background);
+        color: $neutral-grey;
         text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
-          color: var(--primary-color);
+          color: $secondary-brand;
         }
 
         &:first-child {
@@ -88,8 +84,8 @@
         }
 
         @media (max-width: 96px) {
-          font-size: 8px; /* Smallest font size */
-          padding: 2px 5px; /* Minimal padding */
+          font-size: 8px; 
+          padding: 2px 5px;
         }
       }
     }
@@ -120,31 +116,30 @@
       padding: 8px 15px;
       border-radius: 6px;
       text-align: center;
-      font-family: var(--font-family);
+      font-family: $body-font;
       font-size: 14px;
       transition: all 0.3s ease;
       text-decoration: none;
     }
 
     .login-btn {
-      background: var(--neutral-silver);
-      color: var(--primary-color);
-      border: none solid var(--primary-color);
+      background: $neutral-silver;
+      color: $primary-brand;
+      border: none;
       
 
       &:hover {
-        background: var(--primary-color);
-        color: #fff;
+        color: $primary-brand;
       }
     }
 
     .signup-btn {
-      background: var(--primary-color);
-      color: #fff;
+      background: $primary-brand;
+      color: $neutral-white;
       border: none;
 
       &:hover {
-        background: darken(#4CAF4F, 10%);
+        background: $shade-s1;
       }
     }
 
@@ -157,87 +152,27 @@
 
     @media (max-width: 96px) {
       .login-btn, .signup-btn {
-        font-size: 7px; /* Smallest font size */
-        padding: 3px 2px; /* Minimal padding */
-        border-radius: 3px; /* Smaller border radius */
+        font-size: 7px; 
+        padding: 3px 2px;
+        border-radius: 3px; 
       }
     }
   }
 
   .navbar-toggler {
-    display: none;
-    background: none;
+    color: $neutral-silver;
     border: none;
-    width: 24px; /* Fixed width for the toggler */
-    height: 20px; /* Fixed height for the toggler */
-    position: relative;
-    cursor: pointer;
   
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 2px; /* Thickness of the lines */
-      background: var(--primary-color);
-      transition: all 0.3s ease;
-    }
-  
-    &::before {
-      top: 0;
-    }
-  
-    &::after {
-      bottom: 0;
-    }
-  
-    /* Middle line */
-    span {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: var(--primary-color);
-      transform: translateY(-50%);
-    }
-  
-    @media (max-width: 991px) {
-      display: block;
-  
-      &::before,
-      &::after,
-      span {
-        height: 1.5px; /* Thinner lines for smaller screens */
-      }
-  
-      width: 12px; /* Smaller width */
-      height: 14px; /* Smaller height */
-    }
-  
-    @media (max-width: 768px) {
-      width: 10px; /* Even smaller width */
-      height: 12px; /* Even smaller height */
-  
-      &::before,
-      &::after,
-      span {
-        height: 1px; /* Thinnest lines */
-      }
-    }
   }
-
   .offcanvas {
     width: 250px;
-    background: var(--neutral-silver);
+    background: $neutral-white;
 
     .offcanvas-header {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid $neutral-black;
 
       .btn-close {
-        color: var(--primary-color);
+        color: $neutral-black;
       }
     }
 
@@ -246,3 +181,4 @@
     }
   }
 }
+      // height: 12px; 
