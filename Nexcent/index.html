@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="SCSS/style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <!-- Logo -->
       <a href="#" class="navbar-brand">
@@ -42,96 +42,132 @@
             <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
             <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
           </ul>
+          
+          <!-- Auth Buttons (Responsive) -->
+          <div class="auth-buttons">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="signup-btn">Sign up</a>
+          </div>
         </div>
-      </div>
-
-      <!-- Auth Buttons -->
-      <div class="auth-buttons">
-        <a href="#" class="login-btn">Login</a>
-        <a href="#" class="signup-btn">Sign up</a>
       </div>
     </div>
   </nav>
 
 <!-- Hero Slider Section -->
 <section class="hero-slider">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Carousel Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+  <div class="container">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-    <!-- Carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="hero-slide">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">
-                Lessons and insights
-                <br>
-                <span class="highlight">from 8 years</span>
-              </h1>
-              <p class="hero-subtitle">
-                Where to grow your business as a photographer: site or social media?
-              </p>
-              <a href="#" class="btn btn-primary hero-cta">Register</a>
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="hero-slide">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">
+                  Lessons and insights
+                  <br>
+                  <span class="highlight">from 8 years</span>
+                </h1>
+                <p class="hero-subtitle">
+                  Where to grow your business as a photographer: site or social media?
+                </p>
+                <a href="#" class="btn btn-primary hero-cta">Register</a>
+              </div>
+              <div class="hero-image-container">
+                <img src="Images/s.svg" alt="slider" class="hero-image">
+              </div>
             </div>
-            <div class="hero-image-container">
-              <img src="Images/slider-image.svg" alt="Business Illustration" class="hero-image">
+          </div>
+        </div>
+        
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="hero-slide">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">
+                  Lessons and insights
+                  <br>
+                  <span class="highlight">from 8 years</span>
+                </h1>
+                <p class="hero-subtitle">
+                  Where to grow your business as a photographer: site or social media?
+                </p>
+                <a href="#" class="btn btn-primary hero-cta">Register</a>
+              </div>
+              <div class="hero-image-container">
+                <img src="Images/slider-image.svg" alt="slider" class="hero-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <div class="hero-slide">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">
+                  Lessons and insights
+                  <br>
+                  <span class="highlight">from 8 years</span>
+                </h1>
+                <p class="hero-subtitle">
+                  Where to grow your business as a photographer: site or social media?
+                </p>
+                <a href="#" class="btn btn-primary hero-cta">Register</a>
+              </div>
+              <div class="hero-image-container">
+                <img src="Images/slider-image.svg" alt="slider" class="hero-image">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- 2nd Slide -->
-      <div class="carousel-item active">
-        <div class="hero-slide">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">
-                Lessons and insights
-                <br>
-                <span class="highlight">from 8 years</span>
-              </h1>
-              <p class="hero-subtitle">
-                Where to grow your business as a photographer: site or social media?
-              </p>
-              <a href="#" class="btn btn-primary hero-cta">Register</a>
-            </div>
-            <div class="hero-image-container">
-              <img src="Images/slider-image.svg" alt="Business Illustration" class="hero-image">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 3rd Slide -->
-      <div class="carousel-item active">
-        <div class="hero-slide">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">
-                Lessons and insights
-                <br>
-                <span class="highlight">from 8 years</span>
-              </h1>
-              <p class="hero-subtitle">
-                Where to grow your business as a photographer: site or social media?
-              </p>
-              <a href="#" class="btn btn-primary hero-cta">Register</a>
-            </div>
-            <div class="hero-image-container">
-              <img src="Images/slider-image.svg" alt="Business Illustration" class="hero-image">
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
+
+
+    <div class="container2">
+      <div class="client-content">
+        <h2 class="client-title">Our Clients</h2>
+        <p class="client-subtitle">We have been working with some Fortune 500+ clients</p>
+        
+        <div class="client-logos">
+          <div class="client-logo">
+            <img src="Images/Client1-logo.svg" alt="Client Logo 1">
+          </div>
+          <div class="client-logo">
+            <img src="Images/Client2-logo.svg" alt="Client Logo 2">
+          </div>
+          <div class="client-logo">
+            <img src="Images/Client3-logo.svg" alt="Client Logo 3">
+          </div>
+          <div class="client-logo">
+            <img src="Images/Client4-logo.svg" alt="Client Logo 4">
+          </div>
+          <div class="client-logo">
+            <img src="Images/Client5-logo.svg" alt="Client Logo 5">
+          </div>
+          <div class="client-logo">
+            <img src="Images/Client6-logo.svg" alt="Client Logo 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  
 </section>
+
+ 
 
 
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>

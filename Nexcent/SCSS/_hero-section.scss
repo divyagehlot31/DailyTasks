@@ -2,20 +2,36 @@
 @import "variables";
 
 .hero-slider {
-  max-width: 1440px;
-  margin: 0 auto;
   background-color: $neutral-silver;
-  font-family: $body-font;
+  
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    // padding: 0 100px;
+    // margin: 0 12px;
 
+    @media (max-width: 1200px) {
+      padding: 0 72px;
+    }
+
+    @media (max-width: 991px) {
+      padding: 0 48px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 24px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 15px;
+    }
+  }
 
   .carousel {
     overflow: hidden;
+    position: relative;
 
     .carousel-item {
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   height: 100vh;
       background-size: cover;
       background-position: center;
       position: relative;
@@ -23,24 +39,16 @@
   }
 
   .hero-slide {
-    padding: 96px 144px;
+    padding: 96px 0;
     background-color: $neutral-silver;
 
-    @media (max-width: 1200px) {
-      padding: 72px 100px;
-    }
-
     @media (max-width: 991px) {
-      padding: 48px 60px;
+      padding: 48px 0;
       text-align: center;
     }
 
-    @media (max-width: 767px) {
-      padding: 24px 20px;
-    }
-
     @media (max-width: 576px) {
-      padding: 24px 15px;
+      padding: 24px 0;
     }
   }
 
@@ -49,7 +57,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    padding: 20px auto;
 
     @media (max-width: 991px) {
       flex-direction: column;
@@ -59,10 +66,6 @@
 
     @media (max-width: 576px) {
       gap: 20px;
-    }
-
-    @media (max-width: 168px) {
-      gap: 10px;
     }
   }
 
@@ -99,9 +102,6 @@
       font-size: 28px;
       margin-bottom: 10px;
     }
-    @media (max-width: 126px) {
-      font-size: 16px;
-    }
 
     .highlight {
       color: $primary-brand;
@@ -128,12 +128,6 @@
     }
 
     @media (max-width: 576px) {
-      font-size: 12px;
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 126px) {
-      font-size: 12px;
       margin-bottom: 20px;
     }
   }
@@ -158,11 +152,6 @@
       padding: 10px 20px;
       font-size: 14px;
     }
-
-    @media (max-width: 126px) {
-      padding: 6px 10px;
-      font-size: 12px;
-    }
   }
 
   .hero-image-container {
@@ -173,10 +162,6 @@
 
     @media (max-width: 991px) {
       width: 100%;
-    }
-
-    @media (max-width: 168px) {
-      // width: 100%;
     }
   }
 
@@ -199,38 +184,15 @@
       max-width: 160px;
       max-height: 180px;
     }
-
-    @media (max-width: 168px) {
-      max-width: 120px;
-      max-height: 180px;
-    }
-
-    @media (max-width: 126px) {
-      max-width: 40px;
-      max-height: 80px;
-    }
   }
 
-  // Carousel Indicators (Dots)
   .carousel-indicators {
     position: absolute;
-   
-    // bottom: 1px;
-
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 10px;
-
-    @media (max-width: 576px) {
-      // bottom: 30px;
-      gap: 6px;
-      margin: 10px 0;
-    }
-    @media (max-width: 126px) {
-      // bottom: 30px;
-      gap: 3px;
-      margin: 10px 0;
-    }
-   
 
     button {
       width: 10px;
@@ -258,32 +220,7 @@
         }
       }
     }
-
-    button {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: rgba($primary-brand, 0.3);
-      border: none;
-      opacity: 0.5;
-      transition: all 0.3s ease;
-
-      &.active {
-        width: 10px;
-        height: 10px;
-        background-color: $primary-brand;
-        opacity: 1;
-      }
-
-      @media (max-width: 1266px) {
-        width: 4px;
-        height: 4px;
-
-        &.active {
-          width: 6px;
-          height: 6px;
-        }
-      }
-    }
   }
+
+  
 }

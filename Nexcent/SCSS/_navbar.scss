@@ -1,24 +1,23 @@
+// Import variables
 @import "variables";
 
 .navbar {
   background: $neutral-silver;
   padding: 15px 0;
   position: relative;
-  font-family: $body-font;
-
+  
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 1440px;
+    // padding: 0 100px;
   }
 
   .logo {
     max-width: 150px;
     height: auto;
-    transition: max-width 0.3s ease;
 
     @media (max-width: 768px) {
       max-width: 120px;
@@ -27,13 +26,6 @@
     @media (max-width: 480px) {
       max-width: 100px;
     }
-
-    @media (max-width: 193px) {
-      max-width: 80px;
-    }
-
-    @media (max-width: 96px) {
-      max-width: 30px;    }
   }
 
   .navbar-nav {
@@ -42,22 +34,11 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: $body-font;
 
     @media (max-width: 991px) {
       flex-direction: column;
       gap: 15px;
       align-items: flex-start;
-    }
-
-    @media (max-width: 193px) {
-      gap: 10px;
-    }
-
-    @media (max-width: 96px) {
-      display: none; 
     }
 
     .nav-item {
@@ -72,24 +53,12 @@
         transition: color 0.3s ease;
 
         &:hover {
-          color: $secondary-brand;
-        }
-
-        &:first-child {
+          color: $neutral-black;
           font-weight: 500;
         }
 
         @media (max-width: 991px) {
-          font-size: 14px;
-        }
-
-        @media (max-width: 193px) {
-          font-size: 12px;
-        }
-
-        @media (max-width: 96px) {
-          font-size: 8px; 
-          padding: 2px 5px;
+          font-size: 18px;
         }
       }
     }
@@ -99,22 +68,18 @@
     display: flex;
     gap: 14px;
     align-items: center;
-    font-family: $body-font;
-
 
     @media (max-width: 991px) {
-      justify-content: center;
       width: 100%;
+      justify-content: flex-start;
+      margin-top: 20px;
+      gap: 10px;
     }
 
-    @media (max-width: 193px) {
+    @media (max-width: 768px) {
+      gap: 8px;
       flex-direction: column;
-      gap: 5px;
-    }
-
-    @media (max-width: 96px) {
-      flex-direction: column;
-      gap: 3px;
+      align-items: flex-start;
     }
 
     .login-btn, .signup-btn {
@@ -126,17 +91,23 @@
       font-size: 14px;
       transition: all 0.3s ease;
       text-decoration: none;
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+        padding: 6px 12px;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .login-btn {
-      background: $neutral-silver;
-      color: $primary-brand;
+      background: var(--neutral-silver);
+      color: var(--primary-color);
       border: none;
-      
 
       &:hover {
-        color: $primary-brand;
-      }
+        background: $neutral-silver;
+            }
     }
 
     .signup-btn {
@@ -145,38 +116,29 @@
       border: none;
 
       &:hover {
-        background: $shade-s1;
-      }
-    }
-
-    @media (max-width: 193px) {
-      .login-btn, .signup-btn {
-        font-size: 10px;
-        padding: 5px 8px;
-      }
-    }
-
-    @media (max-width: 96px) {
-      .login-btn, .signup-btn {
-        font-size: 7px; 
-        padding: 3px 2px;
-        border-radius: 3px; 
+        background: $shade-s2;
       }
     }
   }
 
   .navbar-toggler {
-    color: $neutral-silver;
+    display: none;
+    background: none;
     border: none;
-  
+    color: var(--primary-color);
+
+    @media (max-width: 991px) {
+      display: block;
+    }
   }
+
   .offcanvas {
     width: 250px;
-    background: $neutral-white;
+    background: $neutral-silver;
 
     .offcanvas-header {
-      border-bottom: 1px solid $neutral-black;
-
+      border-bottom: 1px solid $neutral-silver;
+      
       .btn-close {
         color: $neutral-black;
       }
@@ -187,4 +149,3 @@
     }
   }
 }
-      // height: 12px; 
