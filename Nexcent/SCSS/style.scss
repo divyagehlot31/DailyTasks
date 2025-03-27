@@ -1,15 +1,79 @@
-// Import Variables
-@import 'variables';
-
-// Global container styles
 
 
-// Import Navbar Styles
-@import 'navbar';
 
-// Import Media Query Styles
-// @import 'media';
+@import "variables";
 
-@import 'hero-section';
 
-@import 'client';
+@import "navbar";  
+@import "hero-section";  
+
+
+@import 'client-section';  
+@import 'community-section'; 
+@import 'design-section'; 
+@import 'achievement-section';
+@import 'customer-section';
+// @import 'blog-section';
+@import 'action-section';
+@import 'footer';
+
+
+// .container {
+//   width: 100%;
+//   max-width: 1440px;
+//   margin: 0 auto;
+//   padding: 0 15px;
+// }
+
+// html {
+//   font-size: 16px;
+
+//   @include lg-screen {
+//     font-size: 15px;
+//   }
+
+//   @include md-screen {
+//     font-size: 14px;
+//   }
+
+//   @include sm-screen {
+//     font-size: 13px;
+//   }
+// }
+
+// .text-center {
+//   text-align: center;
+// }
+
+// .text-right {
+//   text-align: right;
+// }
+
+// .text-left {
+//   text-align: left;
+// }
+
+// .mt-responsive {
+//   margin-top: 50px;
+
+//   @include md-screen {
+//     margin-top: 30px;
+//   }
+
+//   @include sm-screen {
+//     margin-top: 20px;
+//   }
+// }
+
+// .btn-primary {
+//   background-color: $primary-brand;
+//   color: $neutral-white;
+//   border: none;
+//   padding: 10px 20px;
+//   border-radius: 4px;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: darken($primary-brand, 10%);
+//   }
+// }

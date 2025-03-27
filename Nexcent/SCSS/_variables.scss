@@ -36,3 +36,54 @@ $action-warning:#FBC02D;
 $action-error:#E53835;
 $action-success:#2E7D31;
 
+
+
+// Typography
+$body-font: 'Inter', sans-serif;
+
+// Breakpoint Mixins
+// @mixin xs-screen {
+//   @media (max-width: 575.98px) {
+//     @content;
+//   }
+// }
+
+// @mixin sm-screen {
+//   @media (max-width: 767.98px) {
+//     @content;
+//   }
+// }
+
+// @mixin md-screen {
+//   @media (max-width: 991.98px) {
+//     @content;
+//   }
+// }
+
+// @mixin lg-screen {
+//   @media (max-width: 1199.98px) {
+//     @content;
+//   }
+// }
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   font-family: $body-font;
+//   line-height: 1.5;
+//   color: $neutral-d_grey;
+// }
+
+// button, 
+// a {
+//   transition: all 0.3s ease;
+// }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }

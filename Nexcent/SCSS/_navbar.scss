@@ -1,18 +1,44 @@
 // Import variables
 @import "variables";
 
+// .navbar {
+//   background: red;
+//   padding-top: 15px ;
+//   position: relative;
+// padding-left:100px;
+// padding-right: 100px;
+
+// @media (max-width: 768px) {
+//   padding-left: 10px;
+//  padding-right: 10px;
+// }
+
+// @media (max-width: 480px) {
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
+
 .navbar {
-  background: $neutral-silver;
-  padding: 15px 0;
-  position: relative;
-  
-  .container {
+  display: flex;
+  background-color: $neutral-silver;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: unset;
+  // position: relative;
+
+  @media screen and (max-width: 1224px) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
-    // padding: 0 100px;
+    align-items: center;
+    // padding: 20px 20px;
+    // position: relative;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 12px;
   }
 
   .logo {
@@ -26,18 +52,30 @@
     @media (max-width: 480px) {
       max-width: 100px;
     }
+    @media (max-width: 380px) {
+      max-width: 70px;
+    }
+    // @media (max-width: 100px) {
+    //   max-width: 60px;
+    // }
+    @media (max-width: 80px) {
+      max-width: 50px;
+    }
+    @media (max-width: 60px) {
+      max-width: 35px;
+    }
   }
 
   .navbar-nav {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
 
     @media (max-width: 991px) {
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
       align-items: flex-start;
     }
 
@@ -82,7 +120,8 @@
       align-items: flex-start;
     }
 
-    .login-btn, .signup-btn {
+    .login-btn,
+    .signup-btn {
       display: inline-block;
       padding: 8px 15px;
       border-radius: 6px;
@@ -107,7 +146,7 @@
 
       &:hover {
         background: $neutral-silver;
-            }
+      }
     }
 
     .signup-btn {
@@ -129,6 +168,7 @@
 
     @media (max-width: 991px) {
       display: block;
+      // width: 20px;
     }
   }
 
@@ -138,7 +178,7 @@
 
     .offcanvas-header {
       border-bottom: 1px solid $neutral-silver;
-      
+
       .btn-close {
         color: $neutral-black;
       }
