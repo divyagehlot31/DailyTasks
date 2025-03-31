@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+$body-font: Inter, sans-serif;
+
+$neutral-50:#F5F6F9;
+$neutral-100:#E6E9F0;
+$neutral-200:#D7DBE6;
+$neutral-300:#C9CEDD;
+$neutral-400:#BAC1D4;
+$neutral-500:#9CA6C1;
+$neutral-600:#818EB0;
+$neutral-700:#546286;
+$neutral-800:#323B50;
+$neutral-900:#11141B;
+
+$primary-50:#F4F8FF;
+$primary-100:#DEEAFF;
+$primary-200:#BCD6FF;
+$primary-300:#9BC1FF;
+$primary-400:#7AADFF;
+$primary-500:#2196F3;
+$primary-600:#0060FC;
+$primary-700:#0045B4;
+$primary-800:#00296C;
+$primary-900:#000E24;
+
+$secondary-50:#FEF4F5;
+$secondary-100:#FDDFE1;
+$secondary-200:#FCC0C3;
+$secondary-300:#FAA0A5;
+$secondary-400:#F88088;
+$secondary-500:#F42C38;
+$secondary-600:#F00C1A;
+$secondary-700:#AB0913;
+$secondary-800:#67050B;
+$secondary-900:#220204;
+
+$shades-0:#FFFFFF;
+$shades-100:#000000;
+
+@mixin headingH1($weight){
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH1-small($weight){
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH2($weight){
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH2-small($weight){
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH3($weight){
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH4($weight){
+    font-size: 24px;
+    line-height:30px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH4-small($weight){
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH5($weight){
+    font-size: 18px;
+    line-height:23px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+@mixin headingH5-small($weight){
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -2%;
+    font-weight: $weight;
+}
+
+
+@mixin paragraph-p1{
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -2%;
+}
+
+@mixin paragraph-p2{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -2%;
+}
+
+@mixin paragraph-p3{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+}
+
+@mixin paragraph-p4($spacing,$weight){
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: $spacing;
+    font-weight: $weight;
+}
+
+@mixin nav-btn{
+    padding: 14px 32px;
+    background-color: $primary-500;
+    color: $shades-0;
+}
+
