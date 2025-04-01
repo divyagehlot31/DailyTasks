@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
 
 $body-font: Inter, sans-serif;
+$new-font: Manrope,sans-serif;
 
 $neutral-50:#F5F6F9;
 $neutral-100:#E6E9F0;
@@ -62,7 +67,6 @@ $shades-100:#000000;
 @mixin headingH2-small($weight){
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: -2%;
     font-weight: $weight;
 }
 
@@ -97,33 +101,29 @@ $shades-100:#000000;
 @mixin headingH5-small($weight){
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: -2%;
     font-weight: $weight;
 }
 
 
-@mixin paragraph-p1{
+@mixin paragraph-p1($weight){
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: -2%;
+    font-weight: $weight;
 }
 
 @mixin paragraph-p2{
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: -2%;
 }
 
 @mixin paragraph-p3{
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: -2%;
 }
 
-@mixin paragraph-p4($spacing,$weight){
+@mixin paragraph-p4($weight){
     font-size: 12px;
     line-height: 15px;
-    letter-spacing: $spacing;
     font-weight: $weight;
 }
 

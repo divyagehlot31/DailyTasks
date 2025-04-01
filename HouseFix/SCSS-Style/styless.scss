@@ -5,46 +5,256 @@
   width: 100%;
 }
 
-.main-header{
-  top:0;
+.main-header {
+  top: 0;
   position: sticky;
   z-index: 1000;
+  background-color: $shades-0
 }
 
 .top-header {
   background-color: $primary-900;
   padding: 8px 0;
 
-
-.navbar{
+  .navbar {
     background-color: $shades-0;
-}
+  }
 
-  p4, a {
-    @include paragraph-p4(0, 600);
+  p4,
+  a {
+    @include paragraph-p4(600);
     color: $shades-0;
     text-decoration: none;
   }
 }
 
-.nav-btn{
-  @include nav-btn;
+.navbar-toggler {
   border: none;
 }
 
-@media (max-width: 991px) {
+.nav-link {
+  @include paragraph-p3;
+  font-weight: 600;
+  color: $primary-900;
 
+  &:hover {
+    color: $primary-500;
+  }
+}
+.nav-btn {
+  padding: 14px 32px;
+  background-color: $primary-500;
+  @include paragraph-p2;
+  font-weight: 700;
+  color: $shades-0;
+  border-radius: 4px;
+  border: none;
+}
+//  Hero Section Styles
+.hero-section {
+  position: relative;
+  height: 730px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section .row {
+  // width: 100%;
+  // margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 40px;
+  // z-index: 2;
+}
+
+.hero-title {
+  @include headingH1(800);
+  color: $shades-0;
+  font-family: $new-font;
+}
+
+.hero-text {
+  @include paragraph-p1(400);
+  color: $shades-0;
+  font-family: $body-font;
+}
+
+.hero-btn1 {
+  padding: 20px 40px;
+  background-color: $primary-500;
+  font-family: $body-font;
+  @include paragraph-p1(700);
+  color: $shades-0;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero-btn2 {
+  padding: 20px 40px;
+  background-color: transparent;
+  font-family: $body-font;
+  @include paragraph-p1(700);
+  color: $shades-0;
+  text-decoration: none;
+  border: 2px solid $primary-500;
+  border-radius: 4px;
+}
+
+.hero-img {
+  // position: absolute;
+  top: 0;
+  width: 504px;
+  height: 730px;
+  // z-index: 1;
+  overflow: hidden;
+}
+
+
+
+.hero-img img {
+  // width: 100%;
+  height: 100%;
+  // object-fit: cover;
+}
+
+.service-section .row{
+    //  gap: 24px;
+}
+
+.service-img{
+  width: 368px;
+  height: 200px;
+  border-radius: 4px
+}
+
+.service-title{
 
 }
+
+.service-tex{
+
+}
+.about-content{
+  gap:40px;
+}
+
+.about-imges{
+  position: relative;
+}
+
+.image-about {
+  position: absolute;
+  z-index: 2;
+  width: 380px;
+  height: 400px;
+}
+
+.image-about-bg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  // z-index: 1;
+  top: 20px;
+   right: 220px;
+  // left: -14px;
+}
+
+.service-body{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.service-points{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 26px;
+}
+
+
+
+// @media (max-width: 1024px) {
+//   .hero-img {
+//     width: 100%;
+//     right: 0px;
+//   }
+// }
+// @media (max-width: 991px) {
+//   // .container{
+//   //   max-width: 768px;
+//   //   }
+//   // .hero-bg{
+//   //   top: 0;
+//   //   height: 1130px;
+//   // }
+
+//   .col-md-12 {
+//     // margin-top: 800px;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .col-md-12 {
+//     display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     // margin-top: 400px;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .col-md-12 {
+//     margin-top: 400px;
+//     display: flex;
+//     // justify-content: center;
+//     //  align-items: center;
+//   }
+
+//   .hero-title,
+//   .hero-text,
+//   .hero-buttons {
+//     align-items: center;
+//   }
+//   .hero-bg {
+//     top: 0;
+//     height: 1130px;
+//   }
+// }
+
 @media (max-width: 768px) {
-    .top-header{
-        display: none;
-    }
+  .top-header {
+    display: none;
+  }
+  .col-md-12 {
+    // padding-top: 400px
+  }
 }
 
 @media (max-width: 320px) {
-    .top-header{
-        display: none;
-    }
+  .top-header {
+    display: none;
+  }
 }
-
