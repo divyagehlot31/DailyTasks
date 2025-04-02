@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-
-
-
 $body-font: Inter, sans-serif;
 $new-font: Manrope,sans-serif;
 
@@ -111,14 +108,17 @@ $shades-100:#000000;
     font-weight: $weight;
 }
 
-@mixin paragraph-p2{
+@mixin paragraph-p2($weight){
     font-size: 16px;
     line-height: 19px;
+    font-weight: $weight;
+
 }
 
-@mixin paragraph-p3{
+@mixin paragraph-p3($weight){
     font-size: 14px;
     line-height: 18px;
+    font-weight: $weight;
 }
 
 @mixin paragraph-p4($weight){

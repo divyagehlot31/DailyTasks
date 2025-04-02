@@ -1,0 +1,65 @@
+
+// price Media queries
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pricing-item {
+    height: 630px;
+  }
+  
+  .pricing-content {
+    height: 580px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-section {
+    padding: 60px 0;
+  }
+  
+  .pricing-header {
+    margin-bottom: 40px;
+  }
+  
+  .pricing-heading {
+    @include headingH2-small(700);
+  }
+  
+  .pricing-item {
+    height: auto;
+    min-height: 600px;
+    margin-bottom: 24px;
+  }
+  
+  .pricing-content {
+    height: auto;
+    min-height: 550px;
+    gap: 30px;
+  }
+  
+  .col-md-6 {
+    max-width: 50%;
+  }
+}
+//////service media
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .services-header {
+    margin-bottom: 40px;
+  }
+  
+  .services-header-title {
+    @include headingH2-small(700);
+  }
+  
+  .service-item {
+    margin-bottom: 24px;
+  }
+  
+  .col-md-6 {
+    max-width: 50%;
+  }
+}
