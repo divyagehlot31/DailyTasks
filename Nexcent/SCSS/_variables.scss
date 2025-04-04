@@ -1,13 +1,10 @@
-// Breakpoints
-$breakpoint-mobile: 428px;
-$breakpoint-extra-small: 203px;
-
+//Font
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 $body-font: Inter, sans-serif;
 
 // Colors
-
+$nav-link:#18191f;
 $neutral-black: #263238;
 $neutral-d_grey: #4D4D4D;
 $neutral-grey: #717171;
@@ -36,54 +33,61 @@ $action-warning:#FBC02D;
 $action-error:#E53835;
 $action-success:#2E7D31;
 
+@mixin primary-button-style{
+    background-color: $primary-brand;  
+    padding: 10px 20px;  
+    font-size: 14px;
+    font-weight: 500;
+    color: $neutral-white;
+    border-radius: 6px;
+    display: block;
 
+    &:focus{
+        border: 2px solid $neutral-d_grey;
+    }
 
-// Typography
-$body-font: 'Inter', sans-serif;
+    &:active{
+        background-color: $shade-s2;
+    }
+    &.loading{
+        cursor: not-allowed;
+        background-color: $shade-s2;
+    }
+    &.disable{
+        cursor: not-allowed;
+        background-color: $neutral-silver;
+        color: $neutral-grey_blue;
+    }
+}
 
-// Breakpoint Mixins
-// @mixin xs-screen {
-//   @media (max-width: 575.98px) {
-//     @content;
-//   }
-// }
+@mixin tertiary-button-style{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $primary-brand;
+    display: block;
 
-// @mixin sm-screen {
-//   @media (max-width: 767.98px) {
-//     @content;
-//   }
-// }
+    &:hover{
+        background-color: $neutral-silver;
+    }
 
-// @mixin md-screen {
-//   @media (max-width: 991.98px) {
-//     @content;
-//   }
-// }
+    &:focus{
+        border: 2px solid $neutral-d_grey;
+        background-color: $neutral-white;
+    }
 
-// @mixin lg-screen {
-//   @media (max-width: 1199.98px) {
-//     @content;
-//   }
-// }
+    &:active{
+        background-color: $tint-t5;
+    }
+    &.loading{
+        cursor: not-allowed;
+        background-color: $tint-t5;
+    }
+    &.disable{
+        cursor: not-allowed;
+        background-color: $neutral-silver;
+        color: $neutral-grey_blue;
+    }
 
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// body {
-//   font-family: $body-font;
-//   line-height: 1.5;
-//   color: $neutral-d_grey;
-// }
-
-// button, 
-// a {
-//   transition: all 0.3s ease;
-// }
-
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
+}

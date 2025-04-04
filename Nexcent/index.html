@@ -12,401 +12,393 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!--CSS -->
   <link rel="stylesheet" href="SCSS/style.css" />
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <header class="main-header">
     <div class="container">
-      <!-- Logo -->
-      <a href="#" class="navbar-brand">
-        <img class="logo" src="Images/Logo.svg" alt="Logo">
-      </a>
-
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Offcanvas Menu -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="offcanvas-body">
-          <!-- Navigation Links -->
-          <ul class="navbar-nav justify-content-center flex-grow-1">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Feature</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-          </ul>
-
-          <!-- Auth Buttons (Responsive) -->
-          <div class="auth-buttons">
-            <a href="#" class="login-btn">Login</a>
-            <a href="#" class="signup-btn">Sign up</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Slider Section -->
-  <section class="hero-slider">
-    <div class="container">
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-          <!-- First Slide -->
-          <div class="carousel-item active">
-            <div class="hero-slide">
-              <div class="hero-content">
-                <div class="hero-text">
-                  <h1 class="hero-title">
-                    Lessons and insights
-                    <br>
-                    <span class="highlight">from 8 years</span>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Where to grow your business as a photographer: site or social media?
-                  </p>
-                  <a href="#" class="btn btn-primary hero-cta">Register</a>
-                </div>
-                <div class="hero-image-container">
-                  <img src="Images/slider-image.svg" alt="slider" class="hero-image">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Slide -->
-          <div class="carousel-item">
-            <div class="hero-slide">
-              <div class="hero-content">
-                <div class="hero-text">
-                  <h1 class="hero-title">
-                    Lessons and insights
-                    <br>
-                    <span class="highlight">from 8 years</span>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Where to grow your business as a photographer: site or social media?
-                  </p>
-                  <a href="#" class="btn btn-primary hero-cta">Register</a>
-                </div>
-                <div class="hero-image-container">
-                  <img src="Images/slider-image.svg" alt="slider" class="hero-image">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Slide -->
-          <div class="carousel-item">
-            <div class="hero-slide">
-              <div class="hero-content">
-                <div class="hero-text">
-                  <h1 class="hero-title">
-                    Lessons and insights
-                    <br>
-                    <span class="highlight">from 8 years</span>
-                  </h1>
-                  <p class="hero-subtitle">
-                    Where to grow your business as a photographer: site or social media?
-                  </p>
-                  <a href="#" class="btn btn-primary hero-cta">Register</a>
-                </div>
-                <div class="hero-image-container">
-                  <img src="Images/slider-image.svg" alt="slider" class="hero-image">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- client Section -->
-  <div class="client-section">
-    <div class="container2">
-      <div class="client-content">
-        <h2 class="client-title">Our Clients</h2>
-        <p class="client-subtitle">We have been working with some Fortune 500+ clients</p>
-
-        <div class="client-logos">
-          <div class="client-logo">
-            <img src="Images/Client1-logo.svg" alt="Client Logo 1">
-          </div>
-          <div class="client-logo">
-            <img src="Images/Client2-logo.svg" alt="Client Logo 2">
-          </div>
-          <div class="client-logo">
-            <img src="Images/Client3-logo.svg" alt="Client Logo 3">
-          </div>
-          <div class="client-logo">
-            <img src="Images/Client4-logo.svg" alt="Client Logo 4">
-          </div>
-          <div class="client-logo">
-            <img src="Images/Client5-logo.svg" alt="Client Logo 5">
-          </div>
-          <div class="client-logo">
-            <img src="Images/Client6-logo.svg" alt="Client Logo 6">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- community Section -->
-  <div class="community-section">
-    <div class="container">
-      <div class="community-content">
-        <h2 class="community-title">Manage your entire community in a single system</h2>
-        <p class="community-subtitle">Who is Nextcent suitable for?</p>
-
-        <div class="community-cards">
-          <div class="community-card">
-            <div class="community-card-icon">
-              <img src="Images/community-logo1.svg" alt="Membership Organisations">
-            </div>
-            <h3 class="community-card-title">Membership Organisations</h3>
-            <p class="community-card-description">
-              Our membership management software provides full automation of membership renewals and payments
-            </p>
-          </div>
-
-          <div class="community-card">
-            <div class="community-card-icon">
-              <img src="Images/community-logo2.svg" alt="National Associations">
-            </div>
-            <h3 class="community-card-title">National Associations</h3>
-            <p class="community-card-description">
-              Our membership management software provides full automation of membership renewals and payments
-            </p>
-          </div>
-
-          <div class="community-card">
-            <div class="community-card-icon">
-              <img src="Images/community-logo3.svg" alt="Clubs And Groups">
-            </div>
-            <h3 class="community-card-title">Clubs And Groups</h3>
-            <p class="community-card-description">
-              Our membership management software provides full automation of membership renewals and payments
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pixelgrade Experience Section -->
-  <div class="pixelgrade-section">
-    <div class="container">
-      <div class="pixelgrade-content">
-        <div class="pixelgrade-image-container">
-          <img src="Images/design-logo.svg" alt="Pixelgrade Experience">
-        </div>
-        <div class="pixelgrade-text-container">
-          <h2 class="pixelgrade-title">The unseen of spending three years at Pixelgrade</h2>
-          <p class="pixelgrade-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae
-            est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
-            Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem.
-            Donec elementum pulvinar odio.
-          </p>
-          <a href="#" class="pixelgrade-cta">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Achievement Section -->
-  <div class="achievement-section">
-    <div class="container">
-      <div class="achievement-content">
-        <div class="achievement-header">
-          <h2 class="achievement-title">Helping a local <span class="text-primary">business reinvent itself</span></h2>
-          <p class="achievement-subtitle">We reached here with our hard work and dedication</p>
-        </div>
-
-        <div class="achievement-stats">
-          <div class="achievement-stat">
-            <img src="Images/achievement-icon1.svg" alt="Members Icon">
-            <div class="stat-details">
-              <div class="stat-number">2,245,341</div>
-              <div class="stat-label">Members</div>
-            </div>
-          </div>
-
-          <div class="achievement-stat">
-            <img src="Images/achievement-icon2.svg" alt="Clubs Icon">
-            <div class="stat-details">
-              <div class="stat-number">46,328</div>
-              <div class="stat-label">Clubs</div>
-            </div>
-          </div>
-
-          <div class="achievement-stat">
-            <img src="Images/achievement-icon3.svg" alt="Event Bookings Icon">
-            <div class="stat-details">
-              <div class="stat-number">828,867</div>
-              <div class="stat-label">Event Bookings</div>
-            </div>
-          </div>
-
-          <div class="achievement-stat">
-            <img src="Images/achievement-icon4.svg" alt="Payments Icon">
-            <div class="stat-details">
-              <div class="stat-number">1,926,436</div>
-              <div class="stat-label">Payments</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Experience-2 Section -->
-  <div class="pixelgrade-section">
-    <div class="container">
-      <div class="pixelgrade-content">
-        <div class="pixelgrade-image-container">
-          <img src="Images/design-logo1.svg" alt="Pixelgrade Experience">
-        </div>
-        <div class="pixelgrade-text-container">
-          <h2 class="pixelgrade-title">The unseen of spending three years at Pixelgrade</h2>
-          <p class="pixelgrade-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae
-            est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
-            Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem.
-            Donec elementum pulvinar odio.
-          </p>
-          <a href="#" class="pixelgrade-cta">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Cuwstomer Section -->
-  <div class="customer-story-section">
-    <div class="container">
-      <div class="customer-story-content">
-        <div class="customer-story-image">
-          <img src="Images/customer-image.svg" alt="Tesla Logo" class="story-main-image">
-        </div>
-
-        <div class="customer-story-details">
-          <p class="customer-story-description">
-            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt
-            ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
-            molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit.
-            Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis
-            vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
-            Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim
-            finibus ac sit amet magna.
-          </p>
-
-          <div class="customer-profile">
-            <div class="profile-info">
-              <div class="profile-name">Tim Smith</div>
-              <div class="profile-company">British Dragon Boat Racing Association</div>
-            </div>
-
-            <div class="customer-logos">
-              <img src="Images/client-logo1.svg" alt="Client Logo 1">
-              <img src="Images/client-logo2.svg" alt="Client Logo 2">
-              <img src="Images/client-logo3.svg" alt="Client Logo 3">
-              <img src="Images/client-logo4.svg" alt="Client Logo 4">
-              <img src="Images/client-logo5.svg" alt="Client Logo 5">
-              <img src="Images/client-logo6.svg" alt="Client Logo 6">
-              <a href="#" class="meet-customers-link">Meet all customers <span class="arrow">→</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-title">Pellentesque suscipit fringilla libero eu.</h2>
-        <a href="#" class="cta-button">
-          Get a Demo
-          <img src="" alt="direction" />
+      <nav class="navbar navbar-expand-lg ">
+        <!-- logo -->
+        <a class="navbar-brand d-flex flex-row" href="#">
+          <img src="Images/Logo.svg" alt="Logo" />
         </a>
-      </div>
-    </div>
-  </div>
 
-  </section>
+        <!-- toggle btn -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- sidebar -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- sideheader -->
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
 
-  <footer class="footer-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="" alt="Nextcent Logo" class="footer-logo">
-          <p class="footer-description">Copyright © 2020 Nexcent ltd.</p>
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <!-- sidebar-body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center  flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+            </ul>
+
+            <!-- login/sign-up -->
+            <div class="d-flex justify-content-center  align-items-center">
+              <a href="#" class="login text-decoration-none">Login</a>
+              <a href="#" class="signup text-decoration-none">Sign up</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 footer-links">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Testimonials</a></li>
-          </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section>
+
+    <!--Slider Section -->
+    <div class="hero-slider mb-4">
+      <div class="container">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="hero-slide">
+                <div class="row align-items-center">
+                  <div class="col-md-6 d-flex justify-content-end">
+                    <div class="hero-text">
+                      <h1 class="hero-title">
+                        Lessons and insights
+                        <br>
+                        <span class="highlight">from 8 years</span>
+                      </h1>
+                      <p class="hero-subtitle">
+                        Where to grow your business as a photographer: site or social media?
+                      </p>
+                      <a href="#" class="hero-btn">Register</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="hero-image-container">
+                      <img src="Images/slider-image.svg" alt="slider" class="hero-image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="hero-slide">
+                <div class="row align-items-center">
+                  <div class="col-md-6 d-flex justify-content-end">
+                    <div class="hero-text">
+                      <h1 class="hero-title">
+                        Lessons and insights
+                        <br>
+                        <span class="highlight">from 8 years</span>
+                      </h1>
+                      <p class="hero-subtitle">
+                        Where to grow your business as a photographer: site or social media?
+                      </p>
+                      <a href="#" class="hero-btn">Register</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="hero-image-container">
+                      <img src="Images/slider-image.svg" alt="slider" class="hero-image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Slide -->
+            <div class="carousel-item">
+              <div class="hero-slide">
+                <div class="row align-items-center">
+                  <div class="col-md-6 d-flex justify-content-end">
+                    <div class="hero-text">
+                      <h1 class="hero-title">
+                        Lessons and insights
+                        <br>
+                        <span class="highlight">from 8 years</span>
+                      </h1>
+                      <p class="hero-subtitle">
+                        Where to grow your business as a photographer: site or social media?
+                      </p>
+                      <a href="#" class="hero-btn">Register</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="hero-image-container">
+                      <img src="Images/slider-image.svg" alt="slider" class="hero-image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="col-md-3 footer-links">
-          <h5>Support</h5>
-          <ul>
-            <li><a href="#">Help center</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Status</a></li>
-          </ul>
+      </div>
+    </div>
+
+    <!-- section2 -->
+    <div class="clients-section">
+
+      <div class="container">
+        <div class="clients-header text-center mb-5">
+          <h2 class="client-title">Our Clients</h2>
+          <p class="client-description">We have been working with some Fortune 500+ clients</p>
         </div>
-        <div class="col-md-3">
-          <div class="newsletter-section">
-            <h5>Stay up to date</h5>
-            <div class="newsletter-input">
-              <input type="email" placeholder="Your email address">
+
+        <div class="row justify-content-center align-items-center">
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client1-logo.svg" alt="Client 1" class="img-fluid client-logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client2-logo.svg" alt="Client 2" class="img-fluid client-logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client3-logo.svg" alt="Client 3" class="img-fluid client-logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client4-logo.svg" alt="Client 4" class="img-fluid client-logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client5-logo.svg" alt="Client 5" class="img-fluid client-logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 text-center">
+            <img src="Images/client6-logo.svg" alt="Client 6" class="img-fluid client-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section3 -->
+    <div class="community-section py-5 py-lg-6">
+      <div class="container">
+        <!-- Heading -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-3">Manage your entire community <br> in a single system</h2>
+            <p class="section-description">Who is Nextcent suitable for? </p>
+          </div>
+        </div>
+
+        <!-- Cards-->
+        <div class="row justify-content-center gx-5">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 px-lg-4">
+            <div class="card p-4 text-center">
+              <div class="card-icon d-flex align-items-center justify-content-center mb-4">
+                <img src="Images/community-logo1.svg" alt="Membership Organizations" class="img-fluid">
+              </div>
+              <h3 class="card-title">Membership Organizations</h3>
+              <p class="card-text">Our membership management software provides full automation of membership renewals
+                and payments</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 px-lg-5">
+            <div class="card p-4 text-center">
+              <div class="card-icon d-flex align-items-center justify-content-center mb-4">
+                <img src="Images/community-logo2.svg" alt="National Associations" class="img-fluid">
+              </div>
+              <h3 class="card-title">National Associations</h3>
+              <p class="card-text">Our membership management software provides full automation of membership renewals
+                and payments.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 px-lg-4">
+            <div class="card p-4 text-center">
+              <div class="card-icon d-flex align-items-center justify-content-center mb-4">
+                <img src="Images/community-logo3.svg" alt="Clubs and Groups" class="img-fluid">
+              </div>
+              <h3 class="card-title">Clubs and <br>Groups</h3>
+              <p class="card-text">Our membership management software provides full automation of membership renewals
+                and payments</p>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </footer>
+
+    <!-- <section4 -->
+    <div class="section4 py-5 py-lg-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row align-items-center">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="image-container">
+                  <img src="Images/design-logo.svg" alt="Feature Image" class="img-fluid rounded">
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <h2 class="section-title mb-4">The unseen of spending three years at Pixelgrade</h2>
+                <p class="section-description mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
+                  vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique
+                  iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae,
+                  tempus sem. Donec elementum pulvinar odio.
+                </p>
+                <button class="btn px-4 py-2">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section5 -->
+
+    <div class="section5 py-5 py-lg-6">
+      <div class="container">
+        <div class="row justify-content-end align-items-center">
+
+
+
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="s5-title mb-4">Helping a local <br><span>business reinvent itself<span></span></h2>
+            <p class="s5-description">
+              We reached here with our hard work and dedication
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- 1row  -->
+            <div class="row mb-4">
+
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="s-box d-flex">
+                  <div class="s-icon me-3">
+                    <img src="Images/achievement-icon1.svg" alt="Members" class="img-fluid">
+                  </div>
+                  <div class="s-content">
+                    <h3 class="s-number">2,245,341</h3>
+                    <p class="s-label">Members</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="s5-box d-flex">
+                  <div class="s5-icon me-3">
+                    <img src="Images/achievement-icon2.svg" alt="Clubs" class="img-fluid">
+                  </div>
+                  <div class="s5-content">
+                    <h3 class="s5-number">46,328</h3>
+                    <p class="s5-label">Clubs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 row -->
+            <div class="row">
+
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="s5-box d-flex">
+                  <div class="s5-icon me-3">
+                    <img src="Images/achievement-icon3.svg" alt="Event Bookings" class="img-fluid">
+                  </div>
+                  <div class="s5-content">
+                    <h3 class="s5-number">828,867</h3>
+                    <p class="s5-label">Event Bookings</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="s5-box d-flex">
+                  <div class="s-icon me-3">
+                    <img src="Images/achievement-icon4.svg" alt="Payments" class="img-fluid">
+                  </div>
+                  <div class="s5-content">
+                    <h3 class="s5-number">1,926,436</h3>
+                    <p class="s5-label">Payments</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <section6 -->
+    <div class="section4 py-5 py-lg-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row align-items-center">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="image-container">
+                  <img src="Images/design-logo1.svg" alt="Feature Image" class="img-fluid rounded">
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <h2 class="section-title mb-4">How to design your site footer like we did</h2>
+                <p class="section-description mb-4">
+                  Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa
+                  nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+                  habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue
+                  vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+                  efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec
+                  consectetur faucibus ipsum id gravida.
+                </p>
+                <button class="btn px-4 py-2">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
 
 
   <!-- Bootstrap JS -->
   <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
