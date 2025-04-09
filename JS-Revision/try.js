@@ -131,3 +131,66 @@
 // var res0 = d(2,3)
 // console.log(res0);
 
+// console.log(parseInt("107", 2));
+
+// let n = 0;
+// let x = 0;
+// while (n < 3) {
+//   n++;
+//   x += n;
+//   console.log(n)
+// console.log(x)
+// }
+
+
+// console.log(square(5)); 
+
+// function square(n) {
+//   return n * n;
+// }
+
+// ( function name() {
+    
+// })();
+
+// function outside() {
+//     const x = 5;
+//     function inside(x) {
+//       return x * 2;
+//     }
+//     return inside;
+//   }
+  
+//   console.log(outside(3)());
+  
+
+// function Person() {
+//     this.age = 0;
+  
+//     setTimeout(() => {
+//       this.age++; 
+//     }, 1000);
+//   }
+  
+//   const p = new Person();
+// console.log(p)  
+
+// const str = "feePIIIII fi fo fum";
+// const re = /\w+\s/g;
+
+// console.log(re.exec(str)); // ["fee ", index: 0, input: "fee fi fo fum"]
+// console.log(re.exec(str)); // ["fi ", index: 4, input: "fee fi fo fum"]
+// console.log(re.exec(str)); // ["fo ", index: 7, input: "fee fi fo fum"]
+// console.log(re.exec(str)); // null
+// let myArray = ["a", "b", "e", "d", "e"];
+// myArray2 = myArray.sort(); // [ "b", "c", "d"]
+// console.log(myArray2)
+
+// const a = ["a", "b", "c", "d", "a", "b"];
+// console.log(a.lastIndexOf("b")); // 5
+
+// console.log(a.lastIndexOf("b",4)); // 1
+// console.log(a.lastIndexOf("x")); // -1
+
+ const a= [1, "a", 2, "a", 3,"d"]
+ console.log(a.filter((item)=>typeof item === "number"))
