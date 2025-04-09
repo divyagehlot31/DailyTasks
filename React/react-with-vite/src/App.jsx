@@ -1,23 +1,26 @@
-import React from 'react'
+import React, { Component } from "react";
 import "./App.css";
-import LifecycleDemo from '../components/LifecycleDemo';
+import Lifecycle from "../components/Lifecycle";
+// import LifecycleDemo from '../components/LifecycleDemo';
 // import Person from "../components/person";
 
-function App() {
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: true,
+    };
+  }
 
-  return (
-    <div className="App">
-      {/* <Person></Person> */}
-      <LifecycleDemo></LifecycleDemo>
-    </div>
-  );
-
-  
-
-
+  render() {
+    return (
+      <div>
+        {this.state.show ? <Lifecycle /> : <h1>Component Unmount</h1>}
+        <br></br>
+        <button onClick={() => this.setState({ show: !this.state.show })}>Hide and show</button>
+      </div>
+    );
+  }
 }
 
 export default App;
-
-
-
