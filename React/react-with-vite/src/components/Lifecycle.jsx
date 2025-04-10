@@ -26,6 +26,7 @@ class Lifecycle extends Component {
   }
 
 
+
   componentDidUpdate(prevprops, prevstate) {
     if (prevstate.count !== this.state.count) {
       console.log("Component Updated");
