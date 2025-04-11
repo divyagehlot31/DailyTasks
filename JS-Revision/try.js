@@ -192,5 +192,18 @@
 // console.log(a.lastIndexOf("b",4)); // 1
 // console.log(a.lastIndexOf("x")); // -1
 
- const a= [1, "a", 2, "a", 3,"d"]
- console.log(a.filter((item)=>typeof item === "number"))
+//  const a= [1, "a", 2, "a", 3,"d"]
+//  console.log(a.filter((item)=>typeof item === "number"))
+
+
+//Hoisting
+// greet()
+console.log(greet())
+
+
+function greet() {
+    console.log(greet)/4
+    // var greet = 1
+}
+
+

@@ -4,10 +4,10 @@ import "./App.css";
 import TodoItem from "./components/TodoItem";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const [input, setInput] = useState("");
-  const [editId, setEditId] = useState(null);
-  const [editInput, setEditInput] = useState("");
+  const [tasks, setTasks] = useState([]);  //for set task in list
+  const [input, setInput] = useState("");  //for taking input (newtaks addtask)
+  const [editId, setEditId] = useState(null); //when edit task- take edit id
+  const [editInput, setEditInput] = useState(""); //for edited input
 
   const fetchTasks = async () => {
     const res = await axios.get(
@@ -20,13 +20,13 @@ function App() {
     fetchTasks();
   }, []);
 
-  const addTask = () => {
+  const addTask = () => {  //add task
     if (input.trim()==="") return;
     const newTask = {
-      id: Date.now(),
+      id: Date.now(), //for unique id
       title: input
     };
-    setTasks([newTask, ...tasks]);
+    setTasks([newTask, ...tasks]);         
     setInput("");
   };
 
