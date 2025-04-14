@@ -1,10 +1,13 @@
 import React from "react";
-import { Posts } from "./components/Posts";
+// import { Posts } from "./components/Posts";
+// import Try from "./components/try";
 
 const App = () => {
   return(
     <section className="main-section">
       <Posts/>
+      
+     
     </section>
 
   ) 

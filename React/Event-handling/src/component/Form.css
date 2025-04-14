@@ -1,0 +1,97 @@
+.form-container {
+  background: linear-gradient(to right, #cfd8f1, #f49898);
+  padding: 40px;
+  max-width: 550px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  text-align: center;
+  color: #5c50e2;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.form-container .hover-message {
+  text-align: center;
+  color: #1c0462;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.form-container .registration-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.form-container .registration-form .form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+.form-container .registration-form .form-group input,
+.form-container .registration-form .form-group select {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ccd6dd;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.form-container .registration-form .form-group input:focus,
+.form-container .registration-form .form-group select:focus {
+  border-color: #4a90e2;
+  background-color: #fff;
+  outline: none;
+}
+.form-container .registration-form .form-group input::-moz-placeholder, .form-container .registration-form .form-group select::-moz-placeholder {
+  color: #aaa;
+}
+.form-container .registration-form .form-group input::placeholder,
+.form-container .registration-form .form-group select::placeholder {
+  color: #aaa;
+}
+.form-container .registration-form .error-message,
+.form-container .registration-form .success-message {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.form-container .registration-form .error-message {
+  color: #e74c3c;
+}
+.form-container .registration-form .success-message {
+  color: #2ecc71;
+}
+.form-container .registration-form .submit-button,
+.form-container .registration-form .reset-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+}
+.form-container .registration-form .submit-button {
+  background-color: #4a90e2;
+  color: #fff;
+}
+.form-container .registration-form .submit-button:hover {
+  background-color: #277adc;
+  transform: scale(1);
+}
+.form-container .registration-form .reset-button {
+  background-color: #f44336;
+  color: #fff;
+}
+.form-container .registration-form .reset-button:hover {
+  background-color: #f21f0f;
+  transform: scale(1.02);
+}/*# sourceMappingURL=form.css.map */

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import TodoItem from "./components/TodoItem";
+import Try from "./components/try";
 
 function App() {
   const [tasks, setTasks] = useState([]);  //for set task in list
@@ -72,6 +73,8 @@ function App() {
         saveEdit={saveEdit}
         deleteTask={deleteTask}
       />
+
+      <Try/>
       
     </div>
   );
