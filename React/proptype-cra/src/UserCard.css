@@ -1,0 +1,49 @@
+
+.user-card {
+    max-width: 400px; 
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f7d5f4;
+    text-align: center; 
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.Done {
+    color: green;
+  }
+  
+  .status.Rejected {
+    color: red;
+  }
+  
+  .status.pending {
+    color: orange;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 0.9rem;
+  }
+  

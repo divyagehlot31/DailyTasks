@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Form.scss";
 
-function App() {
+function Form() {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -16,6 +16,7 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [hoverMessage, setHoverMessage] = useState("");
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -205,4 +206,4 @@ function App() {
   );
 }
 
-export default App;
+export default Form;

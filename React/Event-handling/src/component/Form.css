@@ -84,7 +84,7 @@
   color: #fff;
 }
 .form-container .registration-form .submit-button:hover {
-  background-color: #277adc;
+  background-color: #3373bd;
   transform: scale(1);
 }
 .form-container .registration-form .reset-button {
@@ -92,6 +92,6 @@
   color: #fff;
 }
 .form-container .registration-form .reset-button:hover {
-  background-color: #f21f0f;
+  background-color: #d52a1e;
   transform: scale(1.02);
-}/*# sourceMappingURL=form.css.map */
+}/*# sourceMappingURL=Form.css.map */

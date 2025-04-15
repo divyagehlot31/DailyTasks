@@ -104,7 +104,7 @@ $transition: 0.3s;
       color: #fff;
 
       &:hover {
-        background-color: darken($primary-color, 8%);
+        background-color: #3373bd;
         transform: scale(1);
       }
     }
@@ -114,7 +114,7 @@ $transition: 0.3s;
       color: #fff;
 
       &:hover {
-        background-color: darken(#f44336, 8%);
+        background-color: #d52a1e;
         transform: scale(1.02);
       }
     }

@@ -2,13 +2,19 @@ import React from 'react'
 import './App.css'
 import Form from './component/Form'
 
-function App() {
+
+function App() 
+{
 
   return (
     <>
      <Form/>
-    </>
+      </>
   )
 }
 
 export default App
+
+
+
+

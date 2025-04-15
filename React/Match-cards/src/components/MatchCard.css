@@ -1,0 +1,33 @@
+.match-card {
+  background: #1c1c1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 900px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.result-status {
+  background: green;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pom {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: auto;
+}
+
+.result-title {
+  margin-left: 20px;
+}/*# sourceMappingURL=MatchCard.css.map */
