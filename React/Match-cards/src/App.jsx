@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import MatchCard from './components/MatchCard';
 
 function App() {
