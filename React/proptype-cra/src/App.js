@@ -1,8 +1,9 @@
 import React from 'react';
 // import './App.css';
 import UserCard from './components/UserCard';
-
+import Try from './components/try';
 const App = () => {
+
   const users = [
     {
       name: 'User1',
@@ -44,6 +45,8 @@ const App = () => {
       {users.map((user, index) => (
         <UserCard key={index} {...user} />
       ))}
+
+      <Try/>
     </div>
   );
 };

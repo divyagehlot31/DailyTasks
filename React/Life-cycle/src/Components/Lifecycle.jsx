@@ -14,7 +14,10 @@ function Lifecycle() {
   }, []);
 
   useEffect(() => {
+   
     console.log("Count updated:", count);
+
+
   }, [count]);
 
   return (

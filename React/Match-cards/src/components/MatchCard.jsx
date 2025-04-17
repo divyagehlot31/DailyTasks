@@ -4,21 +4,20 @@ import "./MatchCard.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const MatchCard = () => {
-  const { match_result, teams, player_of_the_match } = data;
 
   return (
-    <div className="container mt-4">
+    <div className="container-fluid mt-4">
       <div className="match-card">
         <div className="result">
           <span className=" result-title">RESULT</span>
-          <span className="result-text">{`${match_result.winner} won by ${match_result.win_by}`}</span>
+          <span className="result-text">{`${data.match_result.winner} won by ${data.match_result.win_by}`}</span>
           <span className="pom">
-            Player of the Match: {player_of_the_match}
+            Player of the Match: {data.player_of_the_match}
           </span>
         </div>
 
         <div className="teams">
-          {teams.map((teams, id) => (
+          {data.teams.map((teams, id) => (
             <div key={id} className="teams-item ">
               <div className="team-body d-flex align-items-center">
                 <img
@@ -37,7 +36,6 @@ const MatchCard = () => {
                   </span>
                 </div>
               </div>
-              <div></div>
             </div>
           ))}
         </div>

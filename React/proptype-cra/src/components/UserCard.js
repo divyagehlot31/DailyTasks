@@ -10,6 +10,7 @@ const UserCard = ({
   address,
   status,
   nationality ,
+
 }) => {
   return (
     <div className="user-card">
