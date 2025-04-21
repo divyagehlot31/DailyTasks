@@ -1,0 +1,15 @@
+.form-container {
+    background: #2f3036;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  
+ 
+  
+  
